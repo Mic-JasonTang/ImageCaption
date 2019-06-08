@@ -10,9 +10,6 @@ from flask import Flask,render_template,abort,request,send_from_directory
 from datetime import timedelta
 
 import json
-import numpy as np
-import requests
-import cv2 as cv
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT']=timedelta(seconds=1)
@@ -88,7 +85,7 @@ def quickdrawclassifier():
     flags_passthrough = None
     try:
         results, img_results = main()
-        print(results)
+#         print(results)
         return json.dumps({
             'status': 'ok',
             'resultInfo':results.to_json(),

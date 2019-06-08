@@ -1,4 +1,4 @@
-*.pyc
+*.py[cod]
 __pycache__
 models/289999.npy
 # PyInstaller
