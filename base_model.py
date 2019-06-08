@@ -159,7 +159,7 @@ class BaseModel(object):
                                 'caption':captions,
                                 'prob':scores})
         
-        results.to_csv(config.test_result_file)
+#         results.to_csv(config.test_result_file)
         print("Testing complete.")
         
         return results, img_results
