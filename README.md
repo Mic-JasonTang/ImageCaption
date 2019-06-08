@@ -38,9 +38,9 @@ This is a image caption app baseed on DeepRNN [source code](https://github.com/D
 * Then, start the `jupyter notebook`:
     `jupyter notebook`
 * Finally, open the `run.ipynb`:
-1. Copy some images to the dir of `test/images` for testing.
-2. run the first cell to start inference.
-3. run the second cell to visualize the result.
+    1. Copy some images to the dir of `test/images` for testing.
+    2. run the first cell to start inference.
+    3. run the second cell to visualize the result.
 The generated captions will be saved in the folder `test/results`.
 
 ### References
