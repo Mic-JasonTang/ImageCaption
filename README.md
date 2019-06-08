@@ -27,7 +27,8 @@ This is a image caption app baseed on DeepRNN [source code](https://github.com/D
     
     download the pretrained model file:
     - [option1: Box](https://app.box.com/s/xuigzzaqfbpnf76t295h109ey9po5t8p)
-    - [option2: GoogleDrive]()
+    - ~~[option2: GoogleDrive]()~~
+    - [option3: BaiDuYun](https://pan.baidu.com/s/1IVQjxy6kU5XmQ1FpW6Ljow), code:nubk
     
     please put the `289999.npy` to the dir of `models`.
     
