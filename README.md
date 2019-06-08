@@ -24,7 +24,13 @@ This is a image caption app baseed on DeepRNN [source code](https://github.com/D
 1. **Install the requirements**
 
     `pip install -r requirements.txt`
-
+    
+    download the pretrained model file:
+    - [option1: Box](https://app.box.com/s/xuigzzaqfbpnf76t295h109ey9po5t8p)
+    - [option2: GoogleDrive]()
+    
+    please put the `289999.npy` to the dir of `models`.
+    
 2. **Inference**
 * Firstly, start the local api:
     `python main.py`
