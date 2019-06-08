@@ -25,23 +25,23 @@ This is a image caption app baseed on DeepRNN [source code](https://github.com/D
 
     `pip install -r requirements.txt`
     
-    download the pretrained model file:
+2. **download the pretrained model file**
     - [option1: Box](https://app.box.com/s/xuigzzaqfbpnf76t295h109ey9po5t8p)
     - ~~[option2: GoogleDrive]()~~
     - [option3: BaiDuYun](https://pan.baidu.com/s/1IVQjxy6kU5XmQ1FpW6Ljow), code:nubk
     
     please put the `289999.npy` to the dir of `models`.
     
-2. **Inference**
-* Firstly, start the local api:
-    `python main.py`
-* Then, start the `jupyter notebook`:
-    `jupyter notebook`
-* Finally, open the `run.ipynb`:
-1. Copy some images to the dir of `test/images` for testing.
-2. run the first cell to start inference.
-3. run the second cell to visualize the result.
-The generated captions will be saved in the folder `test/results`.
+3. **Inference**
+    * Firstly, start the local api:
+        `python main.py`
+    * Then, start the `jupyter notebook`:
+        `jupyter notebook`
+    * Finally, open the `run.ipynb`:
+        1. Copy some images to the dir of `test/images` for testing.
+        2. run the first cell to start inference.
+        3. run the second cell to visualize the result.
+    The generated captions will be saved in the folder `test/results`.
 
 ### References
 * [DeepRNN](https://github.com/DeepRNN/image_captioning)
