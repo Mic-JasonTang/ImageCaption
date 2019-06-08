@@ -26,7 +26,7 @@ This is a image caption app baseed on DeepRNN [source code](https://github.com/D
     `pip install -r requirements.txt`
 
 2. **Inference**
-* start the local api:
+* Firstly, start the local api:
     `python main.py`
 * Then, start the `jupyter notebook`:
     `jupyter notebook`
