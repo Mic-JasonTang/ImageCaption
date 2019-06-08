@@ -75,31 +75,31 @@ def main(argv=None):
             tf.get_default_graph().finalize()
             results, img_results = model.test(sess, data, vocabulary)
             return results, img_results
-            
+
+
 @app.route('/imagecaption/do', methods=['POST'])
-def quickdrawclassifier():
+def imagecaption():
     #tf.app.run()
-    from tensorflow.python.platform import flags
-    f = flags.FLAGS
-    args = None
-    flags_passthrough = None
+    # from tensorflow.python.platform import flags
+    # f = flags.FLAGS
+    # args = None
+    # flags_passthrough = None
     try:
         results, img_results = main()
-#         print(results)
+        print(results)
         return json.dumps({
             'status': 'ok',
-            'resultInfo':results.to_json(),
-            'img_results':json.dumps(img_results)
+            'resultInfo': results.to_json(),
+            'img_results': json.dumps(img_results)
             })
     except Exception as e:
+        print(e)
         return json.dumps({
             'status': 'error',
-            'resultInfo': e,
-            'img_results':None
+            'resultInfo': str(e),
+            'img_results': ""
             })
-if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000,debug=True)
-    
 
-    
-    
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)

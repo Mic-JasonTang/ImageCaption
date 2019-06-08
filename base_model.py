@@ -1,16 +1,13 @@
 import matplotlib
-
 # Force matplotlib to not use any Xwindows backend.
-
 matplotlib.use('Agg')
-
 
 import os
 import numpy as np
 import pandas as pd
 import tensorflow as tf
 import matplotlib.pyplot as plt
-import cPickle as pickle
+import pickle
 import copy
 import json
 import cv2
@@ -272,14 +269,18 @@ class BaseModel(object):
             save_path = os.path.join(config.save_dir,
                                      str(global_step)+".npy")
 
-        print("Loading the model from %s..." %save_path)
-        data_dict = np.load(save_path).item()
+        print("Loading the model from %s..." % save_path)
+        import sys
+        if sys.version.startswith("3"):
+            data_dict = np.load(save_path, encoding="latin1").item()
+        else:
+            data_dict = np.load(save_path).item()
         count = 0
         for v in tqdm(tf.global_variables()):
             if v.name in data_dict.keys():
                 sess.run(v.assign(data_dict[v.name]))
                 count += 1
-        print("%d tensors loaded." %count)
+        print("%d tensors loaded." % count)
 
     def load_cnn(self, session, data_path, ignore_missing=True):
         """ Load a pretrained CNN model. """
