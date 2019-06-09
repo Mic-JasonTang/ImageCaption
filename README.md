@@ -26,7 +26,7 @@ This is a image caption app baseed on DeepRNN [source code](https://github.com/D
 
     `pip install -r requirements.txt`
     
-    - To make pip more firendly:
+    - To make pip more friendly:
     
         `cd ~`
 
