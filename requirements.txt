@@ -1,4 +1,4 @@
-nltk==3.3
+nltk==3.4.5
 numpy==1.15.4
 scikit_image==0.14.0
 tqdm==4.26.0
