@@ -6,4 +6,4 @@ matplotlib==2.2.3
 tensorflow_gpu==1.12.0
 pandas==0.23.4
 opencv_python==4.1.0.25
-tensorflow==1.13.1
+tensorflow==1.15.4
